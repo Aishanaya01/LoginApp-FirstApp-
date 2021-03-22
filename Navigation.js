@@ -10,10 +10,12 @@ import { createMaterialBottomTabNavigator } from "react-navigation-material-bott
 //importing Screens
 import Login1 from "./Screens/Login";
 import ProfileScreen from "./Screens/ProfileScreen";
-import SettingScreen from "./Screens/SettingScreen";
+import SettingScreen from "./Screens/SettingsScreen";
 import CoachScreen from "./Screens/CoachScreen";
 import ExploreScreen from "./Screens/ExploreScreen";
 import HomeScreen from "./Screens/HomeScreen";
+import EditProfileScreen from "./Screens/EditProfileScreen";
+import BottomPopUp from "./Screens/BottomPopUp";
 
 import EditProfile from "./Screens/DrawerScreens/EditProfile";
 import Feedback from "./Screens/DrawerScreens/Feedback";
