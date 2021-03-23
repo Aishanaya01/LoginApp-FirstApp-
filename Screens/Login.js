@@ -118,7 +118,7 @@ const Login1 = ({ navigation }) => {
 
   return (
     <ImageBackground
-      source={require("../images/Login.jpg")}
+      source={require("../Images/Login.jpg")}
       style={styles.backgroundContainer}
     >
       <View style={styles.LogoContainer}>

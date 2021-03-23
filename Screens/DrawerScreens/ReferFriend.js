@@ -2,7 +2,7 @@ import React from "react";
 import { Text, StyleSheet } from "react-native";
 
 function ReferFriend() {
-  return <Text style={styles.backgroundContainer}>Refer-a-friend-screen</Text>;
+  return <Text style={styles.backgroundContainer}>Refer-a-friend</Text>;
 }
 const styles = StyleSheet.create({
   backgroundContainer: {

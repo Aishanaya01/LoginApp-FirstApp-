@@ -2,7 +2,7 @@ import React from "react";
 import { SafeAreaView } from "react-native";
 
 
-import { dummyData } from "../Apis/Data";
+import { dummyData } from "../Apis/MusicData";
 
 export function ProfileScreen({ navigation }) {
   return (

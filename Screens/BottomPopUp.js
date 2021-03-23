@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import {
   Modal,
   View,
@@ -49,4 +49,4 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-export default BottomPopUp;
+export default BottomPopUp;*/

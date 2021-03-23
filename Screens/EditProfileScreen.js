@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Camera } from 'expo-camera';
-import BottomSheet from "reanimated-bottom-sheet";
+
 import { NavigationEvents } from "react-navigation";
 
 //import BottomPopUp from "../screens/BottomPopUp";
 
-function EditProfileScreen({  }) {  {
+export default function EditProfileScreen() {
   const [hasPermission, setHasPermission] = useState(null);
   const [type, setType] = useState(Camera.Constants.Type.back);
 
@@ -67,4 +67,3 @@ const styles = StyleSheet.create({
     color: 'white',
   },
 });
-export default EditProfileScreen;

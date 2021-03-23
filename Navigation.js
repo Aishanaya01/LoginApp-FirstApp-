@@ -15,7 +15,7 @@ import CoachScreen from "./Screens/CoachScreen";
 import ExploreScreen from "./Screens/ExploreScreen";
 import HomeScreen from "./Screens/HomeScreen";
 import EditProfileScreen from "./Screens/EditProfileScreen";
-import BottomPopUp from "./Screens/BottomPopUp";
+/*import BottomPopUp from "./Screens/BottomPopUp";*/
 
 import EditProfile from "./Screens/DrawerScreens/EditProfile";
 import Feedback from "./Screens/DrawerScreens/Feedback";
@@ -30,7 +30,7 @@ import Screen from "./component/Screen";
 
 const LoginStack = createStackNavigator({
   Login: {
-    screen: Login1,
+    screen: Login,
     navigationOptions: {
       tabBarLabel: "Login Page",
       color: "#1A5CAD",
