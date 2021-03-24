@@ -13,7 +13,7 @@ import ProfileScreen from "./Screens/ProfileScreen";
 import SettingScreen from "./Screens/SettingsScreen";
 import CoachScreen from "./Screens/CoachScreen";
 import ExploreScreen from "./Screens/ExploreScreen";
-import HomeScreen from "./Screens/HomeScreen";
+/*import HomeScreen from "./Screens/HomeScreen";*/
 import EditProfileScreen from "./Screens/EditProfileScreen";
 /*import BottomPopUp from "./Screens/BottomPopUp";*/
 

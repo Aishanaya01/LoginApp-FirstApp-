@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import { color } from "react-native-reanimated";
+/*import { color } from "react-native-reanimated";*/
 import Screen from "..Screen/component/Screen";
 
 const { width, height } = Dimensions.get("window");

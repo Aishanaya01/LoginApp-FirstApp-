@@ -20,7 +20,7 @@ import logo from "../assets/atom.png";
 import { Ionicons } from "@expo/vector-icons";
 
 //animation
-import * as Animatable from "react-native-animatable";
+/*import * as Animatable from "react-native-animatable";*/
 
 //screen-width
 const { width: WIDTH } = Dimensions.get("window");

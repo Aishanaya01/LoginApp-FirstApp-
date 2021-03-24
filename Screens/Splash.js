@@ -8,7 +8,7 @@ import {
   AsyncStorage,
   Text,
 } from "react-native";
-import * as Animatable from "react-native-animatable";
+/*import * as Animatable from "react-native-animatable";*/
 
 const Splash = () => {
   return (
@@ -26,7 +26,7 @@ const Splash = () => {
             alignItems: "center",
           }}
         >
-          <Animatable.Image
+          /*<Animatable.Image
             animation="bounceIn"
             duration="2000"
             source={require("../assets/atom.png")}
@@ -37,7 +37,7 @@ const Splash = () => {
               backgroundColor: "#fafaff",
               opacity: 0.9,
             }}
-          />
+          />*/
           <Text style={{ color: "white" }}>Loading...</Text>
         </View>
       </ImageBackground>
