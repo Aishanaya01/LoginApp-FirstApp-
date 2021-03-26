@@ -8,14 +8,14 @@ import { createDrawerNavigator } from "react-navigation-drawer";
 import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs";
 
 //importing Screens
-import Login1 from "./Screens/Login";
+
 import ProfileScreen from "./Screens/ProfileScreen";
-import SettingScreen from "./Screens/SettingsScreen";
+import SettingScreen from "./Screens/SettingScreen";
 import CoachScreen from "./Screens/CoachScreen";
 import ExploreScreen from "./Screens/ExploreScreen";
-/*import HomeScreen from "./Screens/HomeScreen";*/
+import HomeScreen from "./Screens/HomeScreen";
 import EditProfileScreen from "./Screens/EditProfileScreen";
-/*import BottomPopUp from "./Screens/BottomPopUp";*/
+import LoginScreen from "./Screens/Login";
 
 import EditProfile from "./Screens/DrawerScreens/EditProfile";
 import Feedback from "./Screens/DrawerScreens/Feedback";
@@ -26,11 +26,19 @@ import Plans from "./Screens/DrawerScreens/Plans";
 import ReferFriend from "./Screens/DrawerScreens/ReferFriend";
 import TalkTrainer from "./Screens/DrawerScreens/TalkTrainer";
 import ManageSub from "./Screens/DrawerScreens/ManageSub";
-import Screen from "./component/Screen";
 
+//profile-stack
+const ProfileStack = createStackNavigator({
+  Profile: {
+    screen: ProfileScreen,
+  },
+  EditProfile: {
+    screen: EditProfileScreen,
+  },
+});
 const LoginStack = createStackNavigator({
   Login: {
-    screen: Login,
+    screen: LoginScreen,
     navigationOptions: {
       tabBarLabel: "Login Page",
       color: "#1A5CAD",
@@ -39,10 +47,9 @@ const LoginStack = createStackNavigator({
   },
 });
 
-//profile-stack
-const ProfileStack = createStackNavigator({
-  ProfileScreen: {
-    screen: ProfileScreen,
+const HomeStack = createStackNavigator({
+  Home: {
+    screen: HomeScreen,
     navigationOptions: (props) => ({
       headerLeft: () => (
         <TouchableOpacity
@@ -55,16 +62,12 @@ const ProfileStack = createStackNavigator({
       ),
     }),
   },
-  Screen: {
-    screen: Screen,
-  },
 });
-
 //bottomTab
 const BottomTabPage = createMaterialBottomTabNavigator(
   {
     Home: {
-      screen: HomeScreen,
+      screen: HomeStack,
       navigationOptions: {
         tabBarIcon: () => {
           return <Ionicons name={"md-home"} size={22} color={"white"} />;
@@ -131,9 +134,7 @@ const DrawerNavigator = createDrawerNavigator(
           },
         },
         drawerIcon: () => {
-          return (
-            <Ionicons name={"md-pencil-outline"} size={20} color={"black"} />
-          );
+          return <Ionicons name={"create-outline"} size={20} color={"black"} />;
         },
         //tabBarActiveTintColor
       },
@@ -259,6 +260,7 @@ const DrawerNavigator = createDrawerNavigator(
 
 const AppNavigator = createSwitchNavigator({
   Login: { screen: LoginStack },
+  //profile: { screen: BottomTabPage },
   Tabs: { screen: DrawerNavigator },
 });
 
