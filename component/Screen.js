@@ -15,7 +15,7 @@ import {
 import logo from "../assets/atom.png";
 // import * as Font from 'expo-font';
 const Screen = ({ navigation }) => {
-  const [spinAnim, setSpinAnim] = useState(new Animated.Value(0));
+  +
   const spin = spinAnim.interpolate({
     inputRange: [0, 1],
     outputRange: ["0deg", "360deg"],
