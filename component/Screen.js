@@ -18,7 +18,7 @@ const Screen = ({ navigation }) => {
   +
   const spin = spinAnim.interpolate({
     inputRange: [0, 1],
-    outputRange: ["0deg", "360deg"],
+    /*outputRange: ["0deg", "360deg"],*/
   });
 
   useEffect(() => {

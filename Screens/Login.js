@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import {
   SafeAreaView,
   TextInput,
@@ -11,18 +11,20 @@ import {
   Dimensions,
 } from "react-native";
 import { Formik } from "formik";
-import * as yup from "yup";
 
 import { LoginSchema } from "../component/Validation";
 import LogoAnimation from "../component/LogoAnimation";
-
+import { AuthContext } from "../component/Context";
 import { Ionicons } from "@expo/vector-icons";
+import SettingScreen from "./SettingsScreen";
+import DrawerNavigator from "../DrawerNavigator";
 const { width: WIDTH } = Dimensions.get("window");
 
-const Login= ({ navigation }) => {
+const Login = ({ navigation }) => {
+  const { signIn } = useContext(AuthContext);
   return (
     <ImageBackground
-      source={require("../images/Login.jpg")}
+      source={require("../Images/Login.jpg")}
       style={styles.backgroundContainer}
     >
       <LogoAnimation />
@@ -32,6 +34,7 @@ const Login= ({ navigation }) => {
           initialValues={{ Email: "", Password: "" }} //initial state of email & password_change
           onSubmit={(values) => {
             navigation.navigate("Home");
+            signIn();
           }} //values store the user input for us...values is an object
           validationSchema={LoginSchema} //having all validation objects
         >
@@ -52,7 +55,7 @@ const Login= ({ navigation }) => {
                   onBlur={props.handleBlur("email")}
                   placeholderTextColor={"black"}
                   onChangeText={props.handleChange("Email")}
-                  value={props.values.Email} //if  onsubmit is done this will change the email field with initial value
+                  value={props.values.Email} //if onsubmit is done then  this will change the email field with initial value
                 />
                 <Text style={styles.ErrorMsg}>
                   {props.touched.Email && props.errors.Email}
@@ -71,7 +74,7 @@ const Login= ({ navigation }) => {
                   placeholder={"Password"}
                   placeholderTextColor={"black"}
                   onChangeText={props.handleChange("Password")}
-                  value={props.values.Password} //if  onsubmit is done this will change the email field with initial value
+                  value={props.values.Password} //if  onsubmit is done then  this will change the email field with initial value
                 />
                 <Text style={styles.ErrorMsg}>
                   {props.touched.Password && props.errors.Password}
@@ -83,6 +86,22 @@ const Login= ({ navigation }) => {
                   onPress={props.handleSubmit}
                 >
                   <Text style={styles.Text}>Login</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => {
+                    // navigation.navigate("SettingScreen");
+                  }}
+                >
+                  <Text
+                    style={{
+                      color: "black",
+                      fontSize: 20,
+                      textAlign: "center",
+                      marginTop: 20,
+                    }}
+                  >
+                    Sign-Up
+                  </Text>
                 </TouchableOpacity>
               </View>
             </SafeAreaView>
@@ -100,11 +119,11 @@ const styles = StyleSheet.create({
     height: null,
     justifyContent: "center",
     alignItems: "center",
-    opacity: 0.6,
+    opacity: 0.5,
   },
   LogoContainer: {
     alignItems: "center",
-    marginBottom: 50,
+    marginBottom: 40,
   },
   logo: {
     width: 120,
@@ -136,8 +155,8 @@ const styles = StyleSheet.create({
   },
   btnLogin: {
     width: WIDTH - 295,
-    marginLeft: 90,
-    height: 45,
+    marginLeft: 80,
+    height: 50,
     borderRadius: 45,
     backgroundColor: "#e95203",
     justifyContent: "center",
@@ -147,7 +166,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "rgba(255, 255, 255, 0.8)",
-    fontSize: 32,
+    fontSize: 22,
     textAlign: "center",
     fontWeight: "bold",
   },

@@ -1,65 +1,100 @@
 import React, { useState, useEffect } from "react";
 import {
   View,
-  ImageBackground,
-  Image,
-  TextInput,
-  Dimensions,
-  TouchableOpacity,
-  Alert,
-  StyleSheet,
   Text,
+  Dimensions,
   Animated,
-  Easing,
+  Image,
+  FlatList,
+  ScrollView,
+  StatusBar,
+  TouchableOpacity,
 } from "react-native";
-import logo from "../assets/atom.png";
-// import * as Font from 'expo-font';
-const CoachScreen = ({ navigation }) => {
-  const [spinAnim, setSpinAnim] = useState(new Animated.Value(0));
-  const spin = spinAnim.interpolate({
-    inputRange: [0, 1],
-    outputRange: ["0deg", "360deg"],
-  });
+import { Ionicons as Icon } from "@expo/vector-icons";
+import styles from "../component/ExploreStyle";
+import * as data from "../Apis/Food.json";
+import Food from "../component/Food";
+import CheckOut from "../component/CheckOut";
 
-  useEffect(() => {
-    Animated.loop(
-      Animated.timing(spinAnim, {
-        toValue: 1,
-        duration: 3000,
-        easing: Easing.linear,
-        useNativeDriver: true,
-      })
-    ).start();
-  });
-
+const URL = JSON.stringify(data.Url);
+const ExploreScreen = ({ navigation }) => {
   return (
-    <ImageBackground style={styles.backgroundContainer}>
-      <View style={styles.LogoContainer}>
-        <Animated.Image
-          source={logo}
-          style={styles.logo}
-          style={{ height: 100, width: 100, transform: [{ rotate: spin }] }}
-        />
-        <Text style={styles.LogoText}>ExploreScreeen</Text>
+    <View style={styles.container}>
+      <StatusBar hidden />
+      <View style={styles.header}>
+        <View style={styles.image}>
+          <Image source={require("../Images/cherry.png")} size={100} />
+        </View>
+        <View style={styles.dotView}>
+          <Animated.View style={styles.dot} />
+          <Animated.View style={styles.dot} />
+          <Animated.View style={styles.dot} />
+        </View>
       </View>
-    </ImageBackground>
+
+      <View style={styles.footer}>
+        <Text style={styles.title}>{data.Title}</Text>
+        <View style={styles.priceContainer}>
+          <View style={{ flexDirection: "row" }}>
+            <Text style={styles.price}>{data.OfferPrice}</Text>
+            <Text style={styles.canceledprice}>{data.Price} </Text>
+          </View>
+          <TouchableOpacity style={styles.btncontainer}>
+            <Text style={styles.btntext}>FREE SHIP</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.infoBoxWrapper}>
+          <View style={styles.infoBox}>
+            <Icon name="happy-outline" size={32} color={"#3ea806"} />
+            <Text style={styles.caption}>Safe</Text>
+          </View>
+          <View style={styles.infoBox}>
+            <Icon name="duplicate-outline" size={32} color={"#3ea806"} />
+            <Text style={styles.caption}>Quality</Text>
+          </View>
+          <View style={styles.infoBox}>
+            <Icon name="eyedrop-outline" size={32} color={"#3ea806"} />
+            <Text style={styles.caption}>Fresh</Text>
+          </View>
+        </View>
+        <View>
+          <Text
+            style={styles.description}
+            numberOfLines={3}
+            ellipsizeMode="tail"
+          >
+            {data.Body}
+          </Text>
+          {/* <Text style={styles.viewmore}>View more</Text> */}
+        </View>
+        <View style={styles.addtocart}>
+          <Icon name="heart" size={42} color="#fd2d59" />
+          <TouchableOpacity style={styles.addtocartbtn}>
+            <Text style={styles.addcartbtntext}>Add to Cart</Text>
+          </TouchableOpacity>
+        </View>
+        <View>
+          <Text style={styles.subtitle}>Similar Products</Text>
+          <Food />
+        </View>
+        <View>
+          <TouchableOpacity style={styles.Checkoutbtn}>
+            <Text style={styles.checkoutbtntext1}>{data.Price}</Text>
+            <Text style={styles.checkoutbtntext2}>Check Out</Text>
+            <Icon
+              name="arrow-forward-outline"
+              color="white"
+              style={styles.checkouticon}
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+      {/* <View styles={styles.Checkoutcontainer}>
+        <CheckOut />
+      </View> */}
+    </View>
   );
 };
 
-const styles = StyleSheet.create({
-  backgroundContainer: {
-    flex: 1,
-    width: null,
-    height: null,
-    justifyContent: "center",
-    alignItems: "center",
-    opacity: 0.6,
-    backgroundColor: "#fafaff",
-  },
-  LogoContainer: {
-    alignItems: "center",
-    marginBottom: 50,
-  },
-});
-
-export default CoachScreen;
+export default ExploreScreen;

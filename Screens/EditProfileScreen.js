@@ -143,7 +143,7 @@ export default function ImagePickerExample() {
   return (
     
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-       <ImageBackground style={{position: 'absolute',top: 0,left: 0,bottom: 0,right: 0,opacity: 0.3,}} source={require(".Images/c.jpg")}>
+       <ImageBackground style={{position: 'absolute',top: 0,left: 0,bottom: 0,right: 0,opacity: 0.3,}} source={require("../Images/c.jpg")}>
            </ImageBackground>
       <View
         style={{
