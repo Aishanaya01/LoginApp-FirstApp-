@@ -10,7 +10,7 @@ export const LoginSchema = yup.object().shape({
   Password: yup
     .string()
     .required("Required!")
-    .min(6, "Minimum 6 charaters are required"),
+    .min(6, "Minimum 6 charaters necessary"),
 });
 export const EditProfileSchema = yup.object().shape({
   Name: yup.string().required(),
