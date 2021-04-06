@@ -11,11 +11,11 @@ import {
   DarkTheme as PaperDarkTheme,
 } from "react-native-paper";
 import { createStackNavigator } from "@react-navigation/stack";
-import LoginScreen from "../screens/LoginScreen";
-import HomeStackScreen from "./HomeStack";
+import Login from "../Screens/Login";
+import HomeStack from "./HomeStack";
 import DrawerNavigator from "../DrawerNavigator";
 import BottomNavigator from "../BottomNavigator";
-import Logout from "../screens/Logout";
+import Logout from "../ Screens/Logout";
 import { AuthContext } from "../component/Context";
 
 const LoginStack = createStackNavigator();

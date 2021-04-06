@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useEffect } from "react";
 import { SafeAreaView, StyleSheet, FlatList } from "react-native";
 import FoodItem from "./FoodItem";
-import * as data from "../Apis/Food.json";
+import * as data from "../Apis/FoodData.json";
 const Food = (props, { data }) => {
   const [dataList, setDataList] = useState(data);
   useEffect(() => {

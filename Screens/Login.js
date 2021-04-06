@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     left: 37,
   },
   btnLogin: {
-    width: WIDTH - 295,
+    width: 200,
     marginLeft: 80,
     height: 50,
     borderRadius: 45,
@@ -176,6 +176,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "normal",
     paddingLeft: 45,
-  },
+  }
 });
 export default Login;
