@@ -4,8 +4,10 @@
     "OfferPrice":"$5.6",
     "Price":"$7.2",
     "Body": "You Don't Need a Silver Fork To Eat Good Food.",
-    "Url1":"",
-    "Url2":"",
-    "Name1":"Fresh Cherry",
-    "Name2":"Japan Cherry"
-}
+    Url1: require("../Images/cherry.png"),
+    Url2: require("../images/cherry.jpg"),
+    Url3: require("../images/cherry1.jpg"),
+    Name1: "Fresh Cherry",
+    Name2: "Japan Cherry",
+    image: require("../images/cherry.png"),
+  };
