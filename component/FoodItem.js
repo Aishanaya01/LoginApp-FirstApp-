@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { TouchableOpacity, View, Image } from "react-native";
-import * as data from "../Apis/FoodData.json";
+import * as data from "../Apis/FoodData";
 import styles from "./ExploreStyle";
 const FoodItem = (props, { item }) => {
   return (

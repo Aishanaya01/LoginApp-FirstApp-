@@ -20,7 +20,7 @@ import SettingScreen from "./SettingsScreen";
 import DrawerNavigator from "../DrawerNavigator";
 const { width: WIDTH } = Dimensions.get("window");
 
-const Login = ({ navigation }) => {
+const LoginScreen = ({ navigation }) => {
   const { signIn } = useContext(AuthContext);
   return (
     <ImageBackground
@@ -55,7 +55,7 @@ const Login = ({ navigation }) => {
                   onBlur={props.handleBlur("email")}
                   placeholderTextColor={"black"}
                   onChangeText={props.handleChange("Email")}
-                  value={props.values.Email} //if onsubmit is done then  this will change the email field with initial value
+                  value={props.values.Email} //jb onsubmit is done this will chnge the email field with initial value
                 />
                 <Text style={styles.ErrorMsg}>
                   {props.touched.Email && props.errors.Email}
@@ -74,7 +74,7 @@ const Login = ({ navigation }) => {
                   placeholder={"Password"}
                   placeholderTextColor={"black"}
                   onChangeText={props.handleChange("Password")}
-                  value={props.values.Password} //if  onsubmit is done then  this will change the email field with initial value
+                  value={props.values.Password} //jb onsubmit is done this will chnge the email field with initial value
                 />
                 <Text style={styles.ErrorMsg}>
                   {props.touched.Password && props.errors.Password}
@@ -119,11 +119,11 @@ const styles = StyleSheet.create({
     height: null,
     justifyContent: "center",
     alignItems: "center",
-    opacity: 0.5,
+    opacity: 0.6,
   },
   LogoContainer: {
     alignItems: "center",
-    marginBottom: 40,
+    marginBottom: 50,
   },
   logo: {
     width: 120,
@@ -154,9 +154,9 @@ const styles = StyleSheet.create({
     left: 37,
   },
   btnLogin: {
-    width: 200,
-    marginLeft: 80,
-    height: 50,
+    width: WIDTH - 295,
+    marginLeft: 90,
+    height: 45,
     borderRadius: 45,
     backgroundColor: "#e95203",
     justifyContent: "center",
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "rgba(255, 255, 255, 0.8)",
-    fontSize: 22,
+    fontSize: 32,
     textAlign: "center",
     fontWeight: "bold",
   },
@@ -176,6 +176,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "normal",
     paddingLeft: 45,
-  }
+  },
 });
 export default Login;

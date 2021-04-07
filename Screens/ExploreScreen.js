@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import { Ionicons as Icon } from "@expo/vector-icons";
 import styles from "../component/ExploreStyle";
-import * as data from "../Apis/FoodData.json";
+import * as data from "../Apis/FoodData";
 import Food from "../component/Food";
 import CheckOut from "../component/CheckOut";
 

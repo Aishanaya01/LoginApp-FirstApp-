@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  View,
-  StyleSheet,
-  Image,
-  Dimensions,
-  ImageBackground,
-  AsyncStorage,
-  Text,
-} from "react-native";
-/*import * as Animatable from "react-native-animatable";*/
+import { View, StyleSheet, ImageBackground, Text } from "react-native";
+import * as Animatable from "react-native-animatable";
 
 const Splash = () => {
   return (
@@ -26,9 +18,9 @@ const Splash = () => {
             alignItems: "center",
           }}
         >
-          /*<Animatable.Image
+          <Animatable.Image
             animation="bounceIn"
-            duration="2000"
+            duration={"1500"}
             source={require("../assets/atom.png")}
             style={{
               width: 100,
@@ -37,7 +29,7 @@ const Splash = () => {
               backgroundColor: "#fafaff",
               opacity: 0.9,
             }}
-          />*/
+          />
           <Text style={{ color: "white" }}>Loading...</Text>
         </View>
       </ImageBackground>

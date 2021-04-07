@@ -1,4 +1,4 @@
- const FoodData= {
+export const FoodData = {
     Title: "Australian Cherry",
     OfferPrice: "$5.6",
     Price: "$7.2",
