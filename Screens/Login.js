@@ -14,14 +14,12 @@ import { Formik } from "formik";
 
 import { LoginSchema } from "../component/Validation";
 import LogoAnimation from "../component/LogoAnimation";
-import { AuthContext } from "../component/Context";
 import { Ionicons } from "@expo/vector-icons";
 import SettingScreen from "./SettingsScreen";
 import DrawerNavigator from "../DrawerNavigator";
 const { width: WIDTH } = Dimensions.get("window");
 
-const LoginScreen = ({ navigation }) => {
-  const { signIn } = useContext(AuthContext);
+const Login = ({ navigation }) => {
   return (
     <ImageBackground
       source={require("../Images/Login.jpg")}

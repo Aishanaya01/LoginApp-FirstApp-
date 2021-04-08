@@ -7,7 +7,7 @@ import { dummyData } from "../Apis/MusicData";
 export function ProfileScreen({ navigation }) {
   return (
     <SafeAreaView>
-      <Carousel data={dummyData} />
+      //<Carousel data={dummyData} />
     </SafeAreaView>
   );
 }
