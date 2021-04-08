@@ -11,15 +11,15 @@ import {
   DarkTheme as PaperDarkTheme,
 } from "react-native-paper";
 import { createStackNavigator } from "@react-navigation/stack";
-import Login from "../Screens/Login";
-import HomeStack from "./HomeStack";
+import LoginScreen from "../Screens/Login";
+import HomeStackScreen from "./HomeStack";
 import DrawerNavigator from "../DrawerNavigator";
 import BottomNavigator from "../BottomNavigator";
-import Logout from "../ Screens/Logout";
+import Logout from "../Screens/Logout";
 import { AuthContext } from "../component/Context";
 
 const LoginStack = createStackNavigator();
-const LoginStackScreen = ({ navigation }) => {
+const LoginStack = ({ navigation }) => {
   const [userToken, setUserToken] = useState("");
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
@@ -46,13 +46,13 @@ const LoginStackScreen = ({ navigation }) => {
   const theme = isDarkTheme ? CustomDarkTheme : CustomDefaultTheme;
   const authContext = useMemo(() => ({
     signIn: () => {
-      setUserToken("abc");
+      setUserToken("xyz");
     },
     signOut: () => {
       setUserToken(null);
     },
     signUp: () => {
-      setUserToken("abc");
+      setUserToken("xyz");
     },
     toggleTheme: () => {
       setIsDarkTheme((isDarkTheme) => !isDarkTheme);
@@ -67,7 +67,7 @@ const LoginStackScreen = ({ navigation }) => {
             <Logout />
           ) : (
             <LoginStack.Navigator>
-              <LoginStack.Screen name="Login" component={LoginScreen} />
+              <LoginStack.Screen name="Login" component={Login} />
               <LoginStack.Screen
                 name="Home"
                 component={DrawerNavigator}
@@ -81,4 +81,4 @@ const LoginStackScreen = ({ navigation }) => {
   );
 };
 
-export default LoginStackScreen;
+export default LoginStack;
