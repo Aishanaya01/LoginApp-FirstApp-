@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-import styles from "./ExploreStyles";
+import styles from "./ExploreStyle";
 
 export default PriceContainer = (props, { data }) => {
   return (

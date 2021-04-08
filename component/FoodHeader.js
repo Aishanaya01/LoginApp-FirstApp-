@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image, Animated } from "react-native";
 
-import styles from "./ExploreStyles";
+import styles from "./ExploreStyle";
 
 const FoodHeader = (props, { data }) => {
   return (

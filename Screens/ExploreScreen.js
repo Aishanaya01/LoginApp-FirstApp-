@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StatusBar } from "react-native";
 
-import styles from "../component/FoodUI/ExploreStyles";
+import styles from "../component/ExploreStyle";
 import { FoodData as data } from "../Apis/FoodData.js";
 import CheckOut from "../component/CheckOut";
 

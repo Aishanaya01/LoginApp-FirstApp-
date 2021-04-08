@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons as Icon } from "@expo/vector-icons";
-import styles from "../ExploreStyles";
+import styles from "../ExploreStyle";
 
 const AddtoCart = () => {
   return (
