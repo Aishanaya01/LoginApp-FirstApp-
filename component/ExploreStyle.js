@@ -61,7 +61,7 @@ rightContainer:{
     fontWeight: "bold",
     margin: 8,
   },
-  canceledprice: {
+  /*canceledprice: {
     textDecorationLine: "line-through",
     textDecorationStyle: "solid",
     color: "#8899b1",
@@ -69,7 +69,7 @@ rightContainer:{
     textAlign: "center",
     fontWeight: "bold",
     margin: 12,
-  },
+  },*/
   btncontainer: {
     marginLeft: 100,
     backgroundColor: "#0095ff",
@@ -129,6 +129,26 @@ rightContainer:{
     borderRadius: 10,
   },
   addcartbtntext: {
+    color: "white",
+    fontSize: 20,
+    fontWeight: "bold",
+    textAlign: "center",
+    padding: 10,
+  },
+  BuyNow: {
+    margin: 10,
+    marginTop: 16,
+    marginRight: 10,
+    flexDirection: "row",
+    marginBottom: 10,
+  },
+  BuyNowbtn: {
+    backgroundColor: "#64b903",
+    width: WIDTH - 140,
+    marginLeft: 30,
+    borderRadius: 10,
+  },
+  BuyNowbtntext: {
     color: "white",
     fontSize: 20,
     fontWeight: "bold",

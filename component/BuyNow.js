@@ -3,11 +3,11 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons as Icon } from "@expo/vector-icons";
 import styles from "../ExploreStyle";
 
-const AddtoCart = () => {
+const BuyNow = () => {
   return (
     <View style={styles.addtocart}>
       <TouchableOpacity onPress={() => {}}>
-        <Icon name="heart" size={25} color="#fd2d59" />
+        <Icon name="heart" size={42} color="#fd2d59" />
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.addtocartbtn}>
@@ -16,4 +16,4 @@ const AddtoCart = () => {
     </View>
   );
 };
-export default AddtoCart;
+export default BuyNow;
