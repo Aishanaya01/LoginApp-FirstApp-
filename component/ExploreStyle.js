@@ -118,9 +118,9 @@ rightContainer:{
   addtocart: {
     margin: 10,
     marginTop: 16,
-    marginRight: 10,
+    marginLeft: 10,
     flexDirection: "row",
-    marginBottom: 30,
+    marginBottom: 10,
   },
   addtocartbtn: {
     backgroundColor: "#64b903",
