@@ -11,6 +11,10 @@ import FoodFooter from "../component/FoodFooter";
 const ExploreScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
+    <View style={styles.leftContainer}>
+                </View>
+                <View style={styles.rightContainer}>
+                </View>
       <StatusBar hidden />
 
       <FoodHeader data={data} />

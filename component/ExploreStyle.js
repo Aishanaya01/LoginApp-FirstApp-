@@ -3,8 +3,17 @@ const { width: WIDTH, height: HEIGHT } = Dimensions.get("screen");
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#a8dfd2",
+    flexDirection:'row'
   },
+  leftContainer:{
+    flex:1,
+    backgroundColor: '#ca8afa',    
+},
+rightContainer:{
+    flex:1,
+    backgroundColor: '#96d0e3'
+
+},
   header: {
     flex: 1 / 1.5,
     justifyContent: "center",

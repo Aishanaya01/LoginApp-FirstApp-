@@ -16,7 +16,7 @@ import HomeStackScreen from "./HomeStack";
 import DrawerNavigator from "../DrawerNavigator";
 import BottomNavigator from "../BottomNavigator";
 import Logout from "../Screens/Logout";
-import { AuthContext } from "../component/Context";
+/*import { AuthContext } from "../component/Context";*/
 
 const LoginStack = createStackNavigator();
 const LoginStack = ({ navigation }) => {

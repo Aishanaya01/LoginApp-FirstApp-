@@ -25,7 +25,7 @@ const Login = ({ navigation }) => {
       source={require("../Images/Login.jpg")}
       style={styles.backgroundContainer}
     >
-      <LogoAnimation />
+      <LogoAnimation/>
 
       <View style={{ margin: 12 }}>
         <Formik
