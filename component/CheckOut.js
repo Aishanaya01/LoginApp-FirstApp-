@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/*import React, { useState, useEffect } from "react";
 import {
   View,
   Text,
@@ -21,4 +21,4 @@ const CheckOut = () => {
     </View>
   );
 };
-export default CheckOut;
+export default CheckOut;*/

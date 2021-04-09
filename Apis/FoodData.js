@@ -3,8 +3,8 @@ import headerImg from "../Images/papaya.jpg";
 
 export const FoodData = {
   title: "Papaya",
-  offerPrice: "Rs.2450",
-  price: "Rs.2500",
+  
+  price: "$10.95",
   image: headerImg,
   description:
     "You Dont Need a Silver Fork To Eat Good Food",

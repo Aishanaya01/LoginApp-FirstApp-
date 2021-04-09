@@ -160,7 +160,7 @@ rightContainer:{
     fontSize: 24,
     fontWeight: "bold",
   },
-  Checkoutbtn: {
+  /*Checkoutbtn: {
     backgroundColor: "#64b903",
     height: 60,
     width: "100%",
@@ -192,7 +192,7 @@ rightContainer:{
     fontWeight: "bold",
     textAlign: "right",
     paddingTop: 15,
-  },
+  },*/
   cardView: {
     flex: 1,
     width: WIDTH - 20,
