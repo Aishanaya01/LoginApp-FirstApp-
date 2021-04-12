@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/*import React, { useState, useEffect } from "react";
 import { Animated, Easing, View, Image, Text, StyleSheet } from "react-native";
 import logo from "../assets/atom.png";
 const LogoAnimation = ({ navigation }) => {
@@ -8,13 +8,13 @@ const LogoAnimation = ({ navigation }) => {
     outputRange: ["0deg", "360deg"],
   });
 
-  useEffect(() => {
+  /*useEffect(() => {
     Animated.loop(
       Animated.timing(spinAnim, {
         toValue: 1,
         duration: 4000,
         easing: Easing.linear,
-     
+       
       })
     ).start();
   });
@@ -46,4 +46,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LogoAnimation;
+export default LogoAnimation;*/

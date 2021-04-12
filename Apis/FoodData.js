@@ -9,12 +9,4 @@ export const FoodData = {
   description:
     "You Dont Need a Silver Fork To Eat Good Food",
 
-  products: [
-    {
-      productId: "1",
-      productName: "Papaya",
-      productImg: productImg1,
-    },
-    
-  ],
 };
