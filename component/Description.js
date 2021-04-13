@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { View, Text } from "react-native";
-import styles from "./ExploreStyles";
+import styles from "./ExploreStyle";
 
 const Description = (props, { data }) => {
   const [showMoreButton, setShowMoreButton] = useState(false);
@@ -44,4 +44,3 @@ const Description = (props, { data }) => {
   );
 };
 export default Description;
-// numberOfLines={3} ellipsizeMode="tail"

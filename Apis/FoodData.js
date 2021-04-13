@@ -1,12 +1,12 @@
-import headerImg from "../Images/papaya.jpg";
+import Image1 from "../Images/papaya.jpg"; 
 
 
-export const FoodData = {
-  title: "Papaya",
-  
-  price: "$10.95",
-  image: headerImg,
-  description:
-    "You Dont Need a Silver Fork To Eat Good Food",
-
+ export const FoodData=
+{
+    "image":Image1,
+    "title": "Papaya",
+    "price":"$10.95",
+    
+    " description":"You Dont Need a Silver Fork To Eat Good Food",
 };
+

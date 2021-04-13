@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+/*import React, { useState, useEffect, useMemo } from "react";
 import { Alert, FlatList, SafeAreaView, ActivityIndicator } from "react-native";
 
 import { MusicData } from "../apis/MusicData";
@@ -33,14 +33,14 @@ const Music = ({ navigation }) => {
       console.log(error);
       //Alert.alert("Error", "Invalid Search:" + error);
     }
-  };*/
+  };
   }
 
   if (!music) {
     return null;
   }
 
-  /*if (loading) {
+  if (loading) {
     return (
       <SafeAreaView>
         <ActivityIndicator
@@ -61,7 +61,7 @@ const Music = ({ navigation }) => {
         //onRefresh={() => void}
       />
     </SafeAreaView>;
-  }*/
+  }
 
   const functiontoRender = ({ item }) => {
     return <MusicItem item={item} />;
@@ -81,4 +81,4 @@ const Music = ({ navigation }) => {
   );
 };
 
-export default Music;
+export default Music;*/

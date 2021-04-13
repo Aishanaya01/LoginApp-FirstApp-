@@ -1,4 +1,4 @@
-/*import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   View,
   Text,
@@ -14,11 +14,11 @@ import styles from "./ExploreStyle";
 const CheckOut = () => {
   return (
     <View style={styles.viewsize}>
-      <Text>$5.6</Text>
+      <Text>$10.52</Text>
       <TouchableOpacity>
         <Text>Check Out</Text>
       </TouchableOpacity>
     </View>
   );
 };
-export default CheckOut;*/
+export default CheckOut;

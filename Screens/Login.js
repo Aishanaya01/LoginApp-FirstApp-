@@ -13,7 +13,7 @@ import {
 import { Formik } from "formik";
 
 import { LoginSchema } from "../component/Validation";
-/*import LogoAnimation from "../component/LogoAnimation";*/
+import LogoAnimation from "../component/LogoAnimation";
 import { Ionicons } from "@expo/vector-icons";
 import SettingScreen from "./SettingsScreen";
 import DrawerNavigator from "../DrawerNavigator";

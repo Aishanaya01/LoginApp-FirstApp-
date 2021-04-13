@@ -5,34 +5,35 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection:'row'
   },
-  leftContainer:{
-    flex:1,
-    backgroundColor: '#ca8afa',    
-},
-rightContainer:{
-    flex:1,
-    backgroundColor: '#96d0e3'
+//   leftContainer:{
+//     flex:0,
+//     backgroundColor: '#ca8afa',    
+// },
+// rightContainer:{
+//     flex:1,
+//     backgroundColor: '#96d0e3'
 
-},
+// },
   header: {
-    flex: 1 / 1.5,
+    flex: 1,
     justifyContent: "center",
     alignContent: "center",
   },
-  footer: {
-    flex: 1,
-    backgroundColor: "#ffffff",
-    borderTopLeftRadius: 30,
-    borderTopRightRadius: 30,
-    paddingVertical: 30,
-    paddingHorizontal: 30,
-  },
   image: {
     flex: 1,
-    margin: 100,
+    margin: 80,
     alignItems: "center",
     justifyContent: "center",
   },
+  footer: {
+    flex: 0,
+    backgroundColor: "#ffffff",
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 16,
+    paddingVertical: 5,
+    paddingHorizontal: 17,
+  },
+ 
   dotView: {
     marginBottom: 20,
     flexDirection: "row",
@@ -51,7 +52,7 @@ rightContainer:{
     fontSize: 28,
     fontWeight: "bold",
   },
-  priceContainer: {
+  PriceContainer: {
     flexDirection: "row",
   },
   price: {
@@ -61,17 +62,9 @@ rightContainer:{
     fontWeight: "bold",
     margin: 8,
   },
-  /*canceledprice: {
-    textDecorationLine: "line-through",
-    textDecorationStyle: "solid",
-    color: "#8899b1",
-    fontSize: 16,
-    textAlign: "center",
-    fontWeight: "bold",
-    margin: 12,
-  },*/
+  
   btncontainer: {
-    marginLeft: 100,
+    bottom: 100,
     backgroundColor: "#0095ff",
     width: 130,
     height: 40,
@@ -110,45 +103,45 @@ rightContainer:{
   },
   description: {
     color: "#888c97",
-    fontSize: 18,
+    fontSize: 20,
   },
   //   viewmore: {
   //     flexDirection: "row",
   //   },
-  addtocart: {
+  cart: {
     margin: 10,
-    marginTop: 16,
+    marginTop: 10,
     marginLeft: 10,
     flexDirection: "row",
     marginBottom: 10,
   },
-  addtocartbtn: {
+  cartbtn: {
     backgroundColor: "#64b903",
-    width: WIDTH - 140,
+    width: 140,
     marginLeft: 30,
     borderRadius: 10,
   },
-  addcartbtntext: {
-    color: "white",
+  cartbtntext: {
+    color: "blue",
     fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
     padding: 10,
   },
-  BuyNow: {
+  buynow: {
     margin: 10,
     marginTop: 16,
     marginRight: 10,
     flexDirection: "row",
     marginBottom: 10,
   },
-  BuyNowbtn: {
+  buynowbtn: {
     backgroundColor: "#64b903",
     width: WIDTH - 140,
     marginLeft: 30,
     borderRadius: 10,
   },
-  BuyNowbtntext: {
+  buynowbtntext: {
     color: "white",
     fontSize: 20,
     fontWeight: "bold",
@@ -160,7 +153,21 @@ rightContainer:{
     fontSize: 24,
     fontWeight: "bold",
   },
-  /*Checkoutbtn: {
+  Checkout: {
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    borderWidth: 0.5,
+    borderColor: "grey",
+    backgroundColor: "#fff",
+    height: 60,
+    width: "100%",
+    // shadowColor: "red",
+    // shadowOffset: { width: 1, height: 1 },
+    // shadowOpacity: 0.5,
+    // shadowRadius: 3,
+    // elevation: 5,
+  },
+  Checkoutbtn: {
     backgroundColor: "#64b903",
     height: 60,
     width: "100%",
@@ -192,18 +199,18 @@ rightContainer:{
     fontWeight: "bold",
     textAlign: "right",
     paddingTop: 15,
-  },*/
+  },
   cardView: {
     flex: 1,
-    width: WIDTH - 20,
-    height: HEIGHT / 3,
+    width:20,
+    height: 30,
     backgroundColor: "white",
-    margin: 10,
-    borderRadius: 10,
+    margin: 5,
+    borderRadius: 5,
     shadowColor: "#000",
     shadowOffset: { width: 0.5, height: 0.5 },
     shadowOpacity: 0.5,
     shadowRadius: 3,
-    elevation: 5,
+    elevation: 2,
   },
 });
