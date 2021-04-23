@@ -10,13 +10,13 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import DrawerNavigator from "../DrawerNavigator";
+import DrawerNavigator from "./DrawerNavigator";
 
 import HomeScreen from "../Screens/HomeScreen";
 
 const HomeStack = createStackNavigator();
 
-const HomeStackScreen = ({ navigation }) => {
+const HomeStack = ({ navigation }) => {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen
@@ -37,4 +37,4 @@ const HomeStackScreen = ({ navigation }) => {
     </HomeStack.Navigator>
   );
 };
-export default HomeStackScreen;
+export default HomeStack;
