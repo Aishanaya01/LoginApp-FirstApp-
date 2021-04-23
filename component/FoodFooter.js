@@ -13,6 +13,7 @@ import Food from "./Food";
 const FoodFooter = (props, { data }) => {
   return (
     <View style={styles.footer}>
+    
     <Description data={props.data} />
       <Text style={styles.title}>{props.data.title}</Text>
       
@@ -26,6 +27,7 @@ const FoodFooter = (props, { data }) => {
         
       </View>
       </View>
+      
    
 
     

@@ -13,6 +13,7 @@ import {
   Easing,
 } from "react-native";
 import logo from "../assets/atom.png";
+import { Ionicons } from "@expo/vector-icons";
 // import * as Font from 'expo-font';
 const ProfileScreen = ({ navigation }) => {
   const [spinAnim, setSpinAnim] = useState(new Animated.Value(0));

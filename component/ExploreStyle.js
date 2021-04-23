@@ -3,7 +3,7 @@ const { width: WIDTH, height: HEIGHT } = Dimensions.get("screen");
 export default StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection:'row'
+    
   },
 //   leftContainer:{
 //     flex:0,
@@ -15,24 +15,28 @@ export default StyleSheet.create({
 
 // },
   header: {
-    flex: 1,
+    flex: 1 / 1.5,
+    backgroundColor: "#a8dfd2",
+    borderBottomLeftRadius: 30,
+    borderBottomRightRadius: 30,
     justifyContent: "center",
-    alignContent: "center",
+    alignContent: "center"
+  },
+  footer: {
+    flex: 1,
+    backgroundColor: "#fff",
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    paddingVertical: 30,
+    paddingHorizontal: 30,
   },
   image: {
     flex: 1,
-    margin: 80,
+    margin: 100,
     alignItems: "center",
     justifyContent: "center",
   },
-  footer: {
-    flex: 0,
-    backgroundColor: "#ffffff",
-    borderTopLeftRadius: 15,
-    borderTopRightRadius: 16,
-    paddingVertical: 5,
-    paddingHorizontal: 17,
-  },
+
  
   dotView: {
     marginBottom: 20,
@@ -64,7 +68,7 @@ export default StyleSheet.create({
   },
   
   btncontainer: {
-    bottom: 100,
+    marginLeft: 100,
     backgroundColor: "#0095ff",
     width: 130,
     height: 40,
@@ -77,24 +81,24 @@ export default StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
   },
-  infoBoxWrapper: {
-    borderBottomColor: "transparent",
-    borderBottomWidth: 12,
-    borderTopColor: "transparent",
-    borderTopWidth: 1,
-    flexDirection: "row",
-    height: 100,
-  },
-  infoBox: {
-    margin: -10,
-    width: "35%",
-    marginRight: 5,
-    alignItems: "center",
-    justifyContent: "center",
-    borderRightColor: "transparent",
-    flexDirection: "row",
-    borderRightWidth: 1,
-  },
+  // infoBoxWrapper: {
+  //   borderBottomColor: "transparent",
+  //   borderBottomWidth: 12,
+  //   borderTopColor: "transparent",
+  //   borderTopWidth: 1,
+  //   flexDirection: "row",
+  //   height: 100,
+  // },
+  // infoBox: {
+  //   margin: -10,
+  //   width: "35%",
+  //   marginRight: 5,
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  //   borderRightColor: "transparent",
+  //   flexDirection: "row",
+  //   borderRightWidth: 1,
+  // },
   caption: {
     fontSize: 20,
     color: "black",
@@ -102,7 +106,7 @@ export default StyleSheet.create({
     marginLeft: 10,
   },
   description: {
-    color: "#888c97",
+    color: "#060607",
     fontSize: 20,
   },
   //   viewmore: {
